@@ -1,50 +1,136 @@
-# Welcome to your Expo app 👋
+# 📱 Mobile App - Gestão de Eventos (Global Solution)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um aplicativo desenvolvido com **React Native + Expo** como parte da disciplina **Mobile Application Development** da FIAP, integrado à **API Java Spring Boot** da disciplina Java Advanced. Ele permite o gerenciamento de eventos com funcionalidades completas de CRUD, navegação entre telas e integração com backend.
 
-## Get started
+---
 
-1. Install dependencies
+## 👥 Integrantes do Grupo
 
-   ```bash
-   npm install
-   ```
+- Vinicius Beda de Oliveira (RM554914)
+- Thiago Alves dos Santos (RM556805)
+- Humberto de Souza (RM558482)
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🎯 Descrição da Solução (Global Solution)
 
-In the output, you'll find options to open the app in a
+O app faz parte de uma solução integrada para monitoramento e gerenciamento de **eventos extremos** em localidades sensíveis. A proposta é centralizar dados de ocorrências em uma plataforma web (Java API) e permitir que equipes em campo possam **consultar, criar, atualizar e remover eventos diretamente pelo app mobile**.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Tecnologias Utilizadas
 
-## Get a fresh project
+### 💻 Frontend (Mobile App)
 
-When you're ready, run:
+- React Native com Expo
+- React Navigation (stack)
+- Axios (requisições HTTP)
+- AsyncStorage (persistência)
+- Expo CLI
+- Componentização e boas práticas
 
-```bash
-npm run reset-project
+### 🌐 Backend (API)
+
+- Java 24 + Spring Boot
+- Spring Web, JPA, Validation
+- Banco de dados H2
+- Swagger para testes
+
+---
+
+## 📱 Funcionalidades
+
+- ✅ Tela de Login (mockada ou com API)
+- ✅ Tela Home com lista de eventos
+- ✅ Detalhamento de evento
+- ✅ Cadastro de novos eventos
+- ✅ Atualização de eventos existentes
+- ✅ Exclusão de eventos
+- ✅ Navegação entre telas com React Navigation
+- ✅ Consumo de API com Axios
+- ✅ Feedback visual (alerts, loaders)
+- ✅ Estilo e identidade visual personalizada
+
+---
+
+## 📁 Estrutura de Pastas
+
+```
+mobile-app/
+├── assets/
+├── components/
+│   ├── EventoCard.js
+│   └── Loading.js
+├── screens/
+│   ├── HomeScreen.js
+│   ├── EventoFormScreen.js
+│   ├── EventoListScreen.js
+│   ├── DetailsScreen.js
+│   ├── ProfileScreen.js
+│   └── LoginScreen.js
+├── services/
+│   ├── api.js
+│   ├── eventService.js
+│   └── locationService.js
+├── navigation/
+│   └── index.js
+├── styles/
+│   └── global.js
+└── App.js
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🔗 Repositórios
 
-To learn more about developing your project with Expo, look at the following resources:
+- **Frontend (Mobile)**: [link GitHub do app mobile]
+- **Backend (API Java)**: [link GitHub da API]
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 📽️ Demonstração em Vídeo
 
-Join our community of developers creating universal apps.
+📺 Assista no YouTube: [link do vídeo demonstrando o app funcionando]
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 📦 Instalação e Execução
+
+### Pré-requisitos
+
+- Node.js instalado
+- Expo CLI (`npm install -g expo-cli`)
+- Java 17 ou superior para a API
+
+### Rodando o Mobile
+
+```bash
+git clone [repo-link]
+cd mobile-app
+npm install
+npx expo start
+```
+
+> Escaneie o QR Code com o **Expo Go** no seu celular
+
+### Rodando a API
+
+```bash
+cd sird-api
+./mvnw spring-boot:run
+```
+
+> Certifique-se de atualizar o IP no `api.js` do app mobile para o IP local da sua máquina rodando a API.
+
+---
+
+## 📌 Observações
+
+- A API precisa estar rodando na mesma rede local do celular para que o app consiga acessar os endpoints.
+- O IP da máquina precisa ser configurado corretamente no `api.js` (ex: `http://192.168.1.100:8080`)
+
+---
+
+## 📝 Licença
+
+Projeto acadêmico, sem fins comerciais.
