@@ -8,7 +8,6 @@ Este é um aplicativo desenvolvido com **React Native + Expo** como parte da dis
 
 - Vinicius Beda de Oliveira (RM554914)
 - Thiago Alves dos Santos (RM556805)
-- Humberto de Souza (RM558482)
 
 ---
 
